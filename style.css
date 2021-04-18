@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*-----background------*/
+
+.banner{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(houses.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+/*-----navbar------*/
+
+.navbar{
+    font-family: cursive;
+    width: 85%;
+    margin: auto;
+    padding: 45px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar img{
+    margin-left: -50px;
+    width: 250px;
+    cursor: auto;
+}
+.navbar ul li{
+    list-style: none;
+    line-height: 35px;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    font-family: cursive;
+    text-decoration: none;
+    color: #D8BFD8;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #98FB98;
+    margin-left: 12;
+    box-sizing: border-box;
+    position: absolute;
+    left: -10;
+    bottom: 0px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    font-family: sans-serif;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #ECCBEC;
+}
+.title{
+    font-size: 75px;
+    line-height: 100px;
+    font-weight: bold;
+    height: 100px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+.animation{
+    color:#00CED1;
+    margin-left: 12px;
+    box-sizing: border-box;
+    animation: animation 6s linear infinite;
+}
+@keyframes animation{
+    0%{margin-top: -400px;}
+    5%{margin-top: -200px;}
+    33%{margin-top: -200px;}
+    38%{margin-top: 0px;}
+    66%{margin-top: 0px;}
+    72%{margin-top: 200px;}
+    100%{margin-top: 200px;}
+}
+.content p{
+    color:white;
+    margin: 20px auto;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+/*-----FOR BUTTONS------*/
+.button{
+    position: fixed;
+    margin-left: 550px;
+    margin-top: 40px;
+}
+
+.button ul{
+    float: right;
+    list-style-type: none;
+}
+.button ul li{
+    display: inline-block;
+    margin: 0 20px;
+    line-height: 35px;
+}
+.button ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #4169e1;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.button ul li a:hover{
+    background:linear-gradient(to right, #4169E1,#6A5ACD,#BA55D3);
+    color: black;
+}
+
+
+
+/*-----Search Page------*/
+
+
+.explore{
+    background-color: #F5E2F5;
+    box-shadow: 0 1px 5px 0 rgba(0,0,50,0.4);
+    width: 100%;
+    padding: 45px 0;
+}
+.explore img{
+    margin-left: 5%;
+    width: 250px;
+}
+.explore ul li{
+    margin: 0 20px;
+    position: relative;
+}
+.explore ul li a{
+    font-size: 20px;
+    color: #40E0D0;
+}
+.explore ul li::after{
+    background: #FF6347;
+}
+
+.searchbox input{
+    width: 78%;
+    margin-left: 11%;
+    margin-top: 65px;
+    padding: 10px 10px;
+    font-size: 15px;
+    border-left: 2px solid #B0C4DE;
+    border-right: 2px solid #B0C4DE;
+    border-top: 2px solid #B0C4DE;
+    border-bottom: 2px solid #B0C4DE;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px 3px rgba(159,216,251,0.4);
+}
+
+table{
+    border-width: thick;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 60px; 
+}
+
+th{
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #e3e3e3;
+    font-family: sans-serif;
+    background: #6A5ACD;
+    padding: 20px 0;
+    color: #FAFAD2;
+}
+
+td{
+    text-align: center;
+    border: 1px solid #e3e3e3;
+    padding: 15px 0;
+    background: #F5FFFA;
+    font-size: 15px;
+    box-shadow: 0 1px 5px 0 rgba(0,0,50,0.4);
+}
+
+td img{
+    width: 200px;
+    height: 40px;
+}
+.owidth{
+    width: 20%;
+}
+.rwidth{
+    width: 12%;
+}
+.twidth{
+    width: 12%;
+}
+.awidth{
+    width: 40%;
+}
+.mwidth{
+    width: 16%;
+}
+
+.hover:hover{
+    background: #FFDAB9;
+} 
+
+tr placeover:hover{
+    background: #DCDCDC;
+}
+
+
+
+
+
