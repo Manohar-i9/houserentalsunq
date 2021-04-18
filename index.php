@@ -27,7 +27,7 @@
             
             <div class="button">
         <ul>
-            <li><a href="login.php"> SIGN UP / LOG IN </a></li>
+            <li><a href="search.php"> SIGN UP / LOG IN </a></li>
             <li><a href="contactus.html"> CONTACT US </a></li>
         </ul>
         </div>
